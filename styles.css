@@ -26,7 +26,9 @@ body {
 
 .left-content img {
   height: 30px; /* Adjust logo height as needed */
-  margin-right: 10px; /* Add spacing between logo and h1 */
+  /* margin-right: 50px;  */
+  margin-left: 50px;
+  /* Add spacing between logo and h1 */
 }
 
 .right-content {
@@ -127,7 +129,7 @@ body {
   line-height: 25px;
   letter-spacing: 0.15em;
   text-align: center;
-
+  font-size: 30px;
   color: #007055; /* Set text color */
   -webkit-text-stroke: 0.5px #fff9f9; /* Add text border */
 
@@ -154,7 +156,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   /* display:flex; */
-  margin-left: 50px;
+  margin-left: 40px;
   /* transition: background-color 0.3s, color 0.3s, border-color 0.3s; */
 }
 
@@ -197,14 +199,13 @@ body {
   /* Additional styles for the <p> element */
   font-size: 18px;
 }
-
 .explanation {
   /* background-color: red; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .explanation p {
@@ -215,10 +216,12 @@ body {
 }
 
 .text-with-arrow {
+  /* background-color: blue; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  margin-bottom: 10px;
 }
 
 .text-with-arrow h3 {
@@ -234,32 +237,17 @@ body {
 }
 /* xl */
 @media (max-width: 1280px) {
-  .container {
-    max-width: 1024px;
-  }
 }
 /* lg */
 @media (max-width: 1024px) {
-  .container {
-    max-width: 768px;
-  }
 }
 
 /* md */
 @media (max-width: 768px) {
-  .container {
-    max-width: 640px;
-  }
 }
 /* sm */
 @media (max-width: 640px) {
-  .container {
-    max-width: 475px;
-  }
 }
 /* XS */
 @media (max-width: 475px) {
-  .container {
-    width: 100%;
-  }
 }
