@@ -2,6 +2,7 @@ body {
   background-color: #e0e0e2;
   padding-left: 8px;
   padding-right: 8px;
+  /* background-color: red; */
 }
 
 #copyright {
@@ -50,6 +51,25 @@ body {
 
 .right-content li a:hover {
   text-decoration: underline; /* Underline on hover */
+}
+
+#main-heading {
+  font-family: "Alfa Slab One", sans-serif;
+  display: flex;
+  justify-content: center;
+  color: #69cfcf;
+  font-size: 50px;
+  /* background-color: red; */
+}
+
+#sub-heading {
+  font-family: "Alfa Slab One", sans-serif;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  font-size: 25px;
+  padding-top: 1px;
+  /* background-color: red; */
 }
 
 #main-Container-Div {
@@ -141,6 +161,72 @@ body {
 .text-container button:hover {
   background-color: #000000;
   color: #fff;
+}
+
+.about-us p {
+  text-align: center; /* Center text horizontally within <p> */
+  margin-bottom: 40px; /* Remove default margin */
+  /* Additional styles for the <p> element */
+  font-size: 18px;
+
+  /* Other styling properties */
+}
+
+.decorationImage img {
+  height: 300px;
+  width: 500px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.bio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.bio img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50px;
+}
+
+.bio p {
+  text-align: center; /* Center text horizontally within <p> */
+  margin-bottom: 40px; /* Remove default margin */
+  /* Additional styles for the <p> element */
+  font-size: 18px;
+}
+
+.explanation {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.explanation p {
+  text-align: center; /* Center text horizontally within <p> */
+  margin-bottom: 40px; /* Remove default margin */
+  /* Additional styles for the <p> element */
+  font-size: 18px;
+}
+
+.text-with-arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-with-arrow h3 {
+  margin-right: 10px; /* Add space between text and arrow */
+}
+.text-with-arrow img {
+  height: 50px;
+  width: 200px;
 }
 
 /* 2xl */
