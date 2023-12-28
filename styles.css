@@ -148,7 +148,8 @@ body {
   margin: 0; /*Remove default margin */
 }
 
-.text-container button {
+.text-container button,
+a {
   /* background-color: red; */
   font-family: "Bevan", sans-serif;
   font-size: 16px;
