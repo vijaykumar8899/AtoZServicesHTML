@@ -1,11 +1,55 @@
 body {
   background-color: #e0e0e2;
-  padding: 8%;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 #copyright {
   font-size: 0.75em;
   padding-top: 12px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* To push logo and h1 to the left and list items to the right */
+  align-items: center; /* Vertically center items */
+  padding: 10px; /* Add padding for spacing */
+  /* background-color: #333;  */
+  color: #000000; /* Text color */
+}
+
+.left-content {
+  display: flex; /* Display logo and h1 in a row */
+  align-items: center; /* Vertically center items */
+}
+
+.left-content img {
+  height: 30px; /* Adjust logo height as needed */
+  margin-right: 10px; /* Add spacing between logo and h1 */
+}
+
+.right-content {
+  display: flex; /* Display list items in a row */
+  list-style-type: none; /* Remove list bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.right-content li {
+  margin-left: 15px; /* Add spacing between list items */
+}
+
+.right-content li:first-child {
+  margin-left: 0; /* Remove left margin from the first list item */
+}
+
+.right-content li a {
+  color: #000000; /* Text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.right-content li a:hover {
+  text-decoration: underline; /* Underline on hover */
 }
 
 #main-Container-Div {
@@ -99,5 +143,37 @@ body {
   color: #fff;
 }
 
+/* 2xl */
+@media (max-width: 1536px) {
+}
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
 
-
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+/* XS */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}
