@@ -1,0 +1,103 @@
+body {
+  background-color: #e0e0e2;
+  padding: 8%;
+}
+
+#copyright {
+  font-size: 0.75em;
+  padding-top: 12px;
+}
+
+#main-Container-Div {
+  /* background-color: red; */
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.sizedBox {
+  width: 30px;
+}
+
+.container {
+  display: flex;
+  align-items: center; /* gelika */
+  justify-content: flex-start;
+  padding: 8px;
+  background-image: url("assets/containerImageBackground.png");
+  background-size: cover;
+  height: 250px;
+  width: 200px; /* Adjust the width as needed */
+  border-radius: 10%;
+  flex-direction: column;
+  margin-left: 10px; /* space between each container*/
+}
+
+#containerImage {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 20px; /* Adjust the spacing between image and text */
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text content */
+}
+
+.text-container p {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: "Alfa Slab One", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.15em;
+  text-align: center;
+
+  color: #007055; /* Set text color */
+  -webkit-text-stroke: 0.5px #fff9f9; /* Add text border */
+
+  /* background: linear-gradient(0deg, #007055, #007055),
+    linear-gradient(0deg, #fff9f9, #fff9f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  margin: 0; /*Remove default margin */
+}
+
+.text-container button {
+  /* background-color: red; */
+  font-family: "Bevan", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border: 0px solid #58bae4;
+  background-image: url("assets/containerButtonBackground.png");
+  background-size: contain; /* Fit the image into the button container */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center; /* Center the image */
+  border-radius: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  /* display:flex; */
+  margin-left: 50px;
+  /* transition: background-color 0.3s, color 0.3s, border-color 0.3s; */
+}
+
+.text-container button:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+
+
