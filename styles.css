@@ -17,6 +17,18 @@ body {
   padding: 10px; /* Add padding for spacing */
   /* background-color: #333;  */
   color: #000000; /* Text color */
+
+  position: fixed;
+  top: 0;
+  width: 90%;
+  z-index: 1000; /* Ensures the navbar is on top of other content */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.navbar.scrolled {
+  background-color: white; /* Change background color on scroll */
+  border-radius: 40px;
+  background-image: url("assets/navImageBackground.png");
 }
 
 .left-content {
@@ -170,7 +182,7 @@ a {
 }
 
 .text-container button:hover {
-  background-color: #000000;
+  /* background-color: #000000; */
   color: #fff;
 }
 
