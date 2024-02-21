@@ -1,5 +1,6 @@
 body {
   background-color: #e0e0e2;
+  margin-top: 20px;
   padding-left: 8px;
   padding-right: 8px;
   /* background-color: red; */
@@ -11,22 +12,24 @@ body {
 }
 
 .navbar {
+  max-width: 60rem;
   display: flex;
   justify-content: space-between; /* To push logo and h1 to the left and list items to the right */
   align-items: center; /* Vertically center items */
-  padding: 10px; /* Add padding for spacing */
+  padding: 20px; /* Add padding for spacing */
   /* background-color: #333;  */
   color: #000000; /* Text color */
 
-  position: fixed;
+  /* position: fixed; */
   top: 0;
-  width: 90%;
+  min-width: 90%;
   z-index: 1000; /* Ensures the navbar is on top of other content */
   transition: background-color 0.3s ease; /* Add transition effect */
+
+  border: 2px solid red;
 }
 
 .navbar.scrolled {
-  background-color: white; /* Change background color on scroll */
   border-radius: 40px;
   background-image: url("assets/navImageBackground.png");
 }
@@ -68,12 +71,15 @@ body {
 }
 
 #main-heading {
+  max-height: 100px;
   font-family: "Alfa Slab One", sans-serif;
   display: flex;
   justify-content: center;
   color: #69cfcf;
-  font-size: 50px;
+  /* font-size: 50px; */
   /* background-color: red; */
+
+  border: 2px solid red;
 }
 
 #sub-heading {
@@ -93,6 +99,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 40;
+  border: 2px solid red;
 }
 
 .row {
@@ -102,6 +110,10 @@ body {
 }
 .sizedBox {
   width: 30px;
+}
+
+.our-services {
+  border: 1px solid red;
 }
 
 .container {
@@ -186,6 +198,14 @@ a {
   color: #fff;
 }
 
+.about-us {
+  padding: 0 1em;
+  max-width: 60rem;
+  margin: 0 auto;
+
+  border: 2px solid red;
+}
+
 .about-us p {
   text-align: center; /* Center text horizontally within <p> */
   margin-bottom: 40px; /* Remove default margin */
@@ -206,12 +226,15 @@ a {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  padding: 0 1em;
+  border: 2px solid red;
 }
 
 .bio img {
   height: 200px;
-  width: 200px;
-  border-radius: 50px;
+  /* width: 200px; */
+  max-width: 100px;
+  border-radius: 10px;
 }
 
 .bio p {
@@ -227,6 +250,8 @@ a {
   justify-content: center;
   align-items: flex-end;
   margin-bottom: 10px;
+
+  border: 2px solid red;
 }
 
 .explanation p {
@@ -264,11 +289,48 @@ a {
 }
 
 /* md */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
+  .navbar {
+    justify-content: flex-end;
+  }
 }
 /* sm */
 @media (max-width: 640px) {
+  .navbar {
+    justify-content: flex-end;
+  }
 }
 /* XS */
 @media (max-width: 475px) {
+  .navbar {
+    max-width: 60rem;
+    display: flex;
+
+    justify-content: flex-end; /* To push logo and h1 to the left and list items to the right */
+    align-items: center; /* Vertically center items */
+    padding: 1px; /* Add padding for spacing */
+    /* background-color: #333;  */
+    color: #000000; /* Text color */
+
+    position: fixed;
+    top: 0;
+    width: 90%;
+    z-index: 1000; /* Ensures the navbar is on top of other content */
+    transition: background-color 0.3s ease; /* Add transition effect */
+
+    border: 2px solid green;
+  }
+
+  contact-us {
+    width: 30px;
+  }
+
+  .row {
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  }
+
+  .container {
+    width: 50%; /* Set each container to take up 50% of the width */
+    margin-left: 0; /* Remove any left margin to prevent spacing between containers */
+  }
 }
